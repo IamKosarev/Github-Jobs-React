@@ -1,10 +1,8 @@
 import React from "react"
-import HomePage from "./pages/HomePage"
+import JobDetailsPage from "./pages/JobDetailsPage"
 
 function App() {
-  return (
-    <HomePage />
-  )
+  return <JobDetailsPage />
 }
 
 export default App
