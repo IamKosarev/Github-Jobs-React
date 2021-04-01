@@ -10,7 +10,6 @@ const JobCard = ({ job }) => {
         className="w-20 h-20 rounded object-contain"
       />
       <div>
-
         <div className="ml-3 font-semibold">
           <div className="text-xs font-bold">{job.company}</div>
           <Link to={`/details/${job.id}`}>
