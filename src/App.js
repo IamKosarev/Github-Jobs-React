@@ -20,9 +20,9 @@ function App() {
 
   return (
     <Router>
-      <div className="container mx-auto bg-gray-100 px-3 sm:px-10 lg:px-30 py-10">
+      <div className="container mx-auto bg-gray-100 px-3 sm:px-10 lg:px-30 py-5 sm:py-10">
         <Link to="/">
-          <div className="text-3xl font-light inline-block">
+          <div className="text-2xl md:text-3xl font-light inline-block">
             <span className="font-bold">Guthub</span> Jobs
           </div>
         </Link>

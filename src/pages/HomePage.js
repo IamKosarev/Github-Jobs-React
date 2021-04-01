@@ -16,9 +16,9 @@ const HomePage = ({
   return (
     <>
       <SearchInput handleParamChange={handleParamChange} />
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         <Location handleParamChange={handleParamChange} />
-        <div className="w-11/12 mt-8">
+        <div className="md:w-11/12 mt-8">
           {!loading && (
             <JobsPagination
               page={page}

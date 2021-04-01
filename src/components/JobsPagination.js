@@ -39,18 +39,22 @@ const JobsPagination = ({ page, setPage, hasNextPage }) => {
       <button className="py-2 px-3 leading-tight bg-blue-500 text-white border border-gray-300 border-r-0 hover:bg-blue-600">
         {page}
       </button>
-      {hasNextPage && <button
-        className="py-2 px-3 leading-tight bg-white border border-gray-300 border-r-0 hover:bg-gray-200"
-        onClick={() => adjustPage(1)}
-      >
-        {page + 1}
-      </button>}
-      {hasNextPage && <button
-        className="py-2 px-3 leading-tight bg-white border border-gray-300 border-r-0 hover:bg-gray-200"
-        onClick={() => adjustPage(1)}
-      >
-        Next
-      </button>}
+      {hasNextPage && (
+        <button
+          className="py-2 px-3 leading-tight bg-white border border-gray-300 border-r-0 hover:bg-gray-200"
+          onClick={() => adjustPage(1)}
+        >
+          {page + 1}
+        </button>
+      )}
+      {hasNextPage && (
+        <button
+          className="py-2 px-3 leading-tight bg-white border border-gray-300 rounded-r hover:bg-gray-200"
+          onClick={() => adjustPage(1)}
+        >
+          Next
+        </button>
+      )}
     </div>
   )
 }
