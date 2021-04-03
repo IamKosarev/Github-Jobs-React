@@ -5,7 +5,10 @@ const JobCard = ({ job }) => {
   return (
     <div className="bg-white mt-8 lg:ml-8 flex items-center p-3 md:h-28 text-blue-900 shadow-md rounded md:relative">
       <img
-        src={job.company_logo || "https://via.placeholder.com/100x100.png?text=Not+Found"}
+        src={
+          job.company_logo ||
+          "https://via.placeholder.com/100x100.png?text=Not+Found"
+        }
         alt={job.title}
         className="w-20 h-20 rounded object-contain"
       />
