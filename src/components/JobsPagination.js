@@ -6,7 +6,7 @@ const JobsPagination = ({ page, setPage, hasNextPage }) => {
   }
 
   return (
-    <div className="ml-8 mt-8 flex rounded my-2 text-blue-900">
+    <div className="md:ml-8 lg:mt-8 flex rounded text-blue-900">
       {page !== 1 && (
         <button
           onClick={() => adjustPage(-1)}
