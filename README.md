@@ -1,4 +1,4 @@
-# React & Tailwind Todo App
+# Job Search App
 
 > In this project I used Github Jobs API with React and built a job searching app
 
@@ -19,8 +19,6 @@
 - Switch between Search page and Details page
 - Easy application with separate apply link
 - Fully responsive
-
-
 
 ## [App Demo](https://github-jobs-react-tailwindcss.netlify.app/)
 
