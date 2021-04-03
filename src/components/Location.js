@@ -2,8 +2,8 @@ import React from "react"
 
 const Location = ({ handleParamChange }) => {
   return (
-    <div className="w-full sm:w-96 mt-8 lg:mt-16 text-gray-500 font-semibold mx-auto">
-      <label htmlFor="checkbox" className="flex items-center ">
+    <div className="lg:w-96 mt-8 lg:mt-16 text-gray-500 font-semibold ">
+      <label htmlFor="checkbox" className="flex items-center">
         <input
           onChange={handleParamChange}
           name="full_time"

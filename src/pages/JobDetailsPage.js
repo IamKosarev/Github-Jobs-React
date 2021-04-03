@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 import ReactMarkdown from "react-markdown"
 
@@ -7,7 +7,7 @@ const JobDetailsPage = ({ jobs }) => {
   const job = jobs.find((job) => job.id === jobId)
 
   return (
-    <div className="flex mt-8">
+    <div className="flex flex-col lg:flex-row mt-8">
       <div className="w-72">
         <Link to="/">
           <button className="flex text-blue-500 hover:text-blue-600 font-semibold ">
@@ -25,7 +25,7 @@ const JobDetailsPage = ({ jobs }) => {
         </div>
       </div>
 
-      <div className="ml-20 text-blue-900 w-9/12">
+      <div className="mt-12 lg:mt-0 lg:ml-20 text-blue-900 w-11/12 lg:w-9/12">
         <h2 className="font-semibold text-2xl items-center">{job.title}</h2>
         <div className="text-xs font-bold inline-block mt-3 border rounded px-1 py-0.5 border-blue-900">
           {job.type}
@@ -38,7 +38,10 @@ const JobDetailsPage = ({ jobs }) => {
         </div>
         <div className="mt-8 flex items-center">
           <img
-            src={job.company_logo}
+            src={
+              job.company_logo ||
+              "https://via.placeholder.com/100x100.png?text=Not+Found"
+            }
             alt={job.title}
             className="w-20 h-20 rounded object-contain"
           />
